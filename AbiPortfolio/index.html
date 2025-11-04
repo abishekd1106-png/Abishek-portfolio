@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abishek • Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eef1f7;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 70px 20px 90px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1.2s ease-in-out;
+      position: relative;
+    }
+    header h1 { font-size: 48px; margin: 0; font-weight: 700; }
+    header p { font-size: 18px; opacity: 0.9; }
+    .social-icons { margin-top: 25px; }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 26px;
+      color: white;
+      transition: transform 0.2s;
+    }
+    .social-icons a:hover { transform: scale(1.25); }
+    .resume-btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: white;
+      color: #6610f2;
+      font-weight: 600;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .resume-btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .section {
+      padding: 40px 30px;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: slideUp 0.8s ease;
+    }
+    h2 { color: #0d6efd; font-size: 28px; margin-bottom: 15px; }
+    .skills span {
+      display: inline-block;
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 25px;
+      margin: 8px;
+      font-size: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .skills span:hover { transform: scale(1.1); }
+    .projects div {
+      padding: 20px;
+      border-left: 5px solid #6610f2;
+      margin-bottom: 20px;
+      background: #f5f0ff;
+      border-radius: 12px;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .projects div:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Abishek</h1>
+    <p>Python Developer • SQL & PL/SQL • Automation & AI Tools</p>
+    <div class="social-icons">
+      <a href="https://github.com/abishekd1106-png">🐙</a>
+      <a href="#">🔗</a>
+      <a href="#">📸</a>
+    </div>
+    <a class="resume-btn" href="resume.pdf" download>Download Resume</a>
+  </header>
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Abishek, a passionate Python developer who builds real-world, daily-use projects.
+      I focus on automation, AI-based tools, and practical applications that simplify life.
+      I enjoy learning new technologies and creating smart, impactful solutions.
+    </p>
+  </div>
+  <div class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>SQL</span>
+      <span>PL/SQL</span>
+      <span>Automation</span>
+      <span>AI Tools</span>
+      <span>Data Handling</span>
+      <span>Problem Solving</span>
+    </div>
+  </div>
+  <div class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div>
+        <h3>Smart Expense & Budget Manager</h3>
+        <p>A powerful Python tool to track expenses, set budgets, and analyze spending patterns. Includes charts, summaries, and CSV export.</p>
+      </div>
+      <div>
+        <h3>Personal AI Assistant</h3>
+        <p>Voice-enabled assistant that opens apps, answers questions, automates tasks, and more using Python.</p>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="contact">
+    <h2>Contact</h2>
+    <p>Email: Abishekd1106@gmail.com</p>
+    <p>GitHub: https://github.com/abishekd1106-png</p>
+  </div>
+</body>
+</html>
